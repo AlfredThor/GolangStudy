@@ -1,6 +1,8 @@
 ## GolangStudy
 这是自学Golang的仓库
+
 ---
+
 ## Go语言特色
 - 简洁、快速、安全
 - 并行、有趣、开源
@@ -17,6 +19,7 @@ Go 语言被设计成一门应用于搭载 Web 服务器，存储集群或类似
 ![img](https://github.com/Hellathor/GolangStudy/blob/main/img/20220329113955.png)
 
 ---
+
 ## SRC中的目录
 **hello**
 - 开篇
@@ -29,3 +32,9 @@ Go 语言被设计成一门应用于搭载 Web 服务器，存储集群或类似
 
 **variable**
 - 语言变量
+
+**constant**
+- 常量
+
+**operator**
+- 运算符
