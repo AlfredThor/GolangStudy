@@ -12,9 +12,9 @@ Go 语言被设计成一门应用于搭载 Web 服务器，存储集群或类似
 
 ## Windows下如何设置环境变量
 - 设置环境变量   
-![img](https://github.com/Hellathor/VersionPro/blob/main/img/20220329113456.png)
+![img](https://github.com/Hellathor/GolangStudy/blob/main/img/20220329113456.png)
 - 打开终端窗口输入go version  
-！[img](https://github.com/Hellathor/VersionPro/blob/main/img/20220329113955.png)
+![img](https://github.com/Hellathor/VersionPro/blob/main/img/20220329113955.png)
 
 ---
 ## SRC中的目录
