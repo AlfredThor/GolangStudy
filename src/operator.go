@@ -51,7 +51,7 @@ func main() {
 		fmt.Printf("第五行 - bb 大于等于 a\n")
 	}
 
-	//关系运算符
+	//逻辑运算符
 	var a1 bool = true
 	var b1 bool = false
 	if a1 && b1 {
@@ -71,4 +71,27 @@ func main() {
 	if !(a1 && b1) {
 		fmt.Printf("第四行 - 条件为 true\n")
 	}
+
+	//位运算符
+	var a2 uint = 60
+	var b2 uint = 13
+	var c2 uint = 0
+
+	c2 = a2 & b2 /* 12 = 0011 1100 */
+	fmt.Printf("第一行 - c 的值为 %d\n", c2)
+
+	c2 = a2 | b2 /* 61 = 0011 1101 */
+	fmt.Printf("第二行 - c 的值为 %d\n", c2)
+
+	c2 = a2 ^ b2 /* 49 = 0011 0001 */
+	fmt.Printf("第三行 - c 的值为 %d\n", c2)
+
+	c2 = a2 << 2 /* 240 = 1111 0000 */
+	fmt.Printf("第四行 - c 的值为 %d\n", c2)
+
+	c2 = a2 >> 2 /* 15 = 0000 1111 */
+	fmt.Printf("第五行 - c 的值为 %d\n", c2)
+
+	//赋值运算符
+	
 }
