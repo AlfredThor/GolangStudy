@@ -93,5 +93,81 @@ func main() {
 	fmt.Printf("第五行 - c 的值为 %d\n", c2)
 
 	//赋值运算符
-	
+	var a01 int = 21
+	var c01 int
+	c01 = a01
+	fmt.Printf("第 1 行 - =  运算符实例，c01 值为 = %d\n", c01)
+
+	c01 += a01
+	fmt.Printf("第 2 行 - += 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 -= a01
+	fmt.Printf("第 3 行 - -= 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 *= a01
+	fmt.Printf("第 4 行 - *= 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 /= a01
+	fmt.Printf("第 5 行 - /= 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 = 200
+
+	c01 <<= 2
+	fmt.Printf("第 6行  - <<= 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 >>= 2
+	fmt.Printf("第 7 行 - >>= 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 &= 2
+	fmt.Printf("第 8 行 - &= 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 ^= 2
+	fmt.Printf("第 9 行 - ^= 运算符实例，c01 值为 = %d\n", c01)
+
+	c01 |= 2
+	fmt.Printf("第 10 行 - |= 运算符实例，c01 值为 = %d\n", c01)
+
+	//其他运算符
+	var aint = 4
+	var bint32 int32
+	var cfloat32 float32
+	var ptr *int
+
+	//运算符实例
+	fmt.Printf("第一行 - aint 变量类型为 = %T\n", aint)
+	fmt.Printf("第二行 - bint32 变量类型为 = %T\n", bint32)
+	fmt.Printf("第三行 - cfloat32 变量类型为 = %T\n", cfloat32)
+
+	//*和&运算符实例
+	ptr = &aint //ptr 包含了aint的变量的地址
+	fmt.Printf("aint 的值为 %d\n", aint)
+	fmt.Printf("ptr 的值为 %d\n", *ptr)
+
+	/*
+		运算符优先级
+		优先级	运算符
+		5	* / % << >> & &^
+		4	+ - | ^
+		3	== != < <= > >=
+		2	&&
+		1	||
+	*/
+	var aaaaa int = 20
+	var bbbbb int = 10
+	var ccccc int = 15
+	var ddddd int = 5
+	var eeeee int
+
+	eeeee = (aaaaa + bbbbb) * ccccc / ddddd
+	fmt.Printf("(a + b) * c / d 的值为 : %d\n", eeeee)
+
+	eeeee = ((aaaaa + bbbbb) * ccccc) / ddddd
+	fmt.Printf("((a + b) * c) / d 的值为  : %d\n", eeeee)
+
+	eeeee = (aaaaa + bbbbb) * (ccccc / ddddd)
+	fmt.Printf("(a + b) * (c / d) 的值为  : %d\n", eeeee)
+
+	eeeee = aaaaa + (bbbbb*ccccc)/ddddd
+	fmt.Printf("a + (b * c) / d 的值为  : %d\n", eeeee)
+
 }

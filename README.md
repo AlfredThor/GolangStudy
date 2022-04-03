@@ -22,13 +22,9 @@ Go 语言被设计成一门应用于搭载 Web 服务器，存储集群或类似
 
 ## SRC中的目录
 - **hello** 开篇
-
 - **Basic_grammar** 基础语法
-
 - **data_types** 数据类型
-
 - **variable** 语言变量
-
 - **constant** 常量
-
 - **operator** 运算符
+- **conditional_statement** 条件语句
