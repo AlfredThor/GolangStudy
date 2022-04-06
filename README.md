@@ -29,3 +29,4 @@ Go 语言被设计成一门应用于搭载 Web 服务器，存储集群或类似
 - **operator** 运算符
 - **conditional_statement** 条件语句
 - **circulation** 循环
+- **function** 函数

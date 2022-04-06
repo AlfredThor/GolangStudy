@@ -54,5 +54,74 @@ func main() {
 	}
 
 	//break语句
+	var a int = 10
+	for a < 20 {
+		fmt.Printf("a的值为： %d\n", a)
+		a++
+		if a > 15 {
+			break
+		}
+	}
 
+	//多重循环，演示使用标记和不使用标记的区别
+	//fmt.Println("------break------不使用标记")
+	//for i := 1; i <= 3; i++ {
+	//	fmt.Printf("i: %d\n", i)
+	//	for i2 := 11; i2 <= 13; i2++ {
+	//		fmt.Printf("i2: %d\n", i2)
+	//		break
+	//	}
+	//}
+
+	//	fmt.Println("------break------使用标记")
+	//re:
+	//	for i := 1; i <= 3; i++ {
+	//		fmt.Printf("i: %d\n", i)
+	//		for i2 := 11; i2 <= 13; i2++ {
+	//			fmt.Printf("i2: %d\n", i2)
+	//			break re
+	//		}
+	//	}
+
+	var afor int = 10
+	for afor < 20 {
+		afor = afor + 1
+		continue
+	}
+	fmt.Printf("afor的值为：%d\n", afor)
+	afor++
+
+	// 不使用标记
+	fmt.Println("---- continue ---- ")
+	for i := 1; i <= 3; i++ {
+		fmt.Printf("i: %d\n", i)
+		for i2 := 11; i2 <= 13; i2++ {
+			fmt.Printf("i2: %d\n", i2)
+			continue
+		}
+	}
+
+	// 使用标记
+	fmt.Println("---- continue label ----")
+re:
+	for i := 1; i <= 3; i++ {
+		fmt.Printf("i: %d\n", i)
+		for i2 := 11; i2 <= 13; i2++ {
+			fmt.Printf("i2: %d\n", i2)
+			continue re
+		}
+	}
+
+	//goto语句
+	var ints int = 10
+
+LOOP:
+	for ints < 20 {
+		if ints == 15 {
+			ints = ints + 1
+			goto LOOP
+		}
+		fmt.Printf("a的值为： %d\n", ints)
+		ints++
+	}
 }
